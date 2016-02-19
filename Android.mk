@@ -9,9 +9,9 @@
 #
 
 ifneq ($(TARGET_BUILD_VARIANT), user)
-KERNEL_DEFCONFIG ?= $(strip $(TARGET_DEVICE))_debug_defconfig
+KERNEL_DEFCONFIG ?= sprout_debug_defconfig
 else
-KERNEL_DEFCONFIG ?= $(strip $(TARGET_DEVICE))_defconfig
+KERNEL_DEFCONFIG ?= cyanogenmod_sprout_defconfig
 endif
 
 KERNEL_DIR := $(call my-dir)
