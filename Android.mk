@@ -8,11 +8,7 @@
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
 
-ifneq ($(TARGET_BUILD_VARIANT), user)
-KERNEL_DEFCONFIG ?= sprout_debug_defconfig
-else
 KERNEL_DEFCONFIG ?= cyanogenmod_sprout_defconfig
-endif
 
 KERNEL_DIR := $(call my-dir)
 ROOTDIR := $(abspath $(TOP))
